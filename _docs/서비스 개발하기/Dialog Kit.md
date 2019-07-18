@@ -16,7 +16,7 @@ Dialog Kit은 기가지니 대화 플랫폼이라 하여, 대화 모델 관리(D
 
 ### Dialog Kit 구성 요소
 
-Dialog Kit을 사용할 때 알아야 하는 용어들에 대하여 간략히 소개하겠습니다. 자세한 내용은 Dialog Kit Guide에 작성되어 있으니 참고해주시면 됩니다. [(Dialog KIt Guide 바로가기)]([https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A0%84%EC%97%90](https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-시작하기-전에))
+Dialog Kit을 사용할 때 알아야 하는 용어들에 대하여 간략히 소개하겠습니다. 자세한 내용은 Dialog Kit Guide에 작성되어 있으니 참고해주시면 됩니다. [(Dialog KIt Guide 바로가기)](https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-시작하기-전에)
 
 Dialog Kit은 기가지니 대화 서비스를 처리하는 메인 서버인 DSS(Dialog Service Server)와 대화를 해석해주는 DMS(Dialog Management Server), 그리고 3rd Party 서비스를 위한 CDSS(Custom Dialog Service Server)와 CDMS(Custom Dialog Management Server)로 구성됩니다. (여기서 대화 서버라는 것은 기가지니가 사용자의 발화문을 인식하고 이해하여 처리해주는 서버를 말합니다.) 
 
@@ -30,7 +30,7 @@ Dialog Kit은 기가지니 대화 서비스를 처리하는 메인 서버인 DSS
 ### Dialog Kit 작업
 
 Dialog Kit은 Console > My Service 에서 진입할 수 있습니다. 
-기가지니가 사용자의 발화문 의도를 파악하기 위해서는 Dialog Kit을 구성해야 하며, Dialog Kit 구성 요소에는  과 인텐트가 있습니다. 
+기가지니가 사용자의 발화문 의도를 파악하기 위해서는 Dialog Kit을 구성해야 하며, Dialog Kit 구성 요소에는  어휘 사전과 인텐트가 있습니다. 
 
 인텐트란 사용자 발화의 의도를 기가지니에게 전달하기 위한 표현어입니다. 예를 들어 사용자가 서비스를 실행시키기 위해서 "ㅇㅇ서비스 실행해줘", "ㅇㅇ서비스 시작"과 같은 발화를 한다고 하면 해당 발화들을 포함하도록 RunApp이라는 인텐트를 생성합니다. 쉽게 말해, RunApp 인텐트는 '서비스 시작'에 대한 의도를 담고 있는 발화를 했을 때 실행되는 함수라고 생각해주시면 됩니다. 
 
@@ -58,7 +58,7 @@ Dialog Kit은 Console > My Service 에서 진입할 수 있습니다.
 - NE-PIZZA								(발화 예: 지니야, 불고기 피자)
 - NE-PIZZA + PR-ORDER         (발화 예: 지니야, 불고기 피자 주문해줘)
 
-이렇게 적용된 인텐트는 그 목적에 따라 Service SDK 정보 입력에서 작성한 url을 기준으로 페이지을 띄우기도 하고, 페이지 이동 없이 코드 내에서 처리되기도 합니다. 이는 이후 [Service SDK-Dialog Kit 연동하기]()에서 자세히 다루도록 하겠습니다. 
+이렇게 적용된 인텐트는 그 목적에 따라 Service SDK 정보 입력에서 작성한 url을 기준으로 페이지을 띄우기도 하고, 페이지 이동 없이 코드 내에서 처리되기도 합니다. 이는 이후 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/인텐트어휘 정보 가져오기/)에서 자세히 다루도록 하겠습니다. 
 
 #### 기본 어휘 사전
 
@@ -176,4 +176,4 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 [참고] 대화모델 배포 전<img src = "https://user-images.githubusercontent.com/36177711/61191978-8aefaf80-a6eb-11e9-9174-e3d60fd34860.png">
 
-[참고] 대화모델 배포 후<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기]()에서 다루도록 하겠습니다. 
+[참고] 대화모델 배포 후<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/서비스 시작과 종료 처리/)에서 다루도록 하겠습니다. 
