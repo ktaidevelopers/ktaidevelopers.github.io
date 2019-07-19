@@ -66,12 +66,19 @@
 		<section class="main">
 			<div class="page-header">
 				<h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
-				<h3>{{ page.title }}</h3>
+				<h3>{{ page.title }}</h3> 
+                <span class="date" style="color:gray"> Latest Update: {{ page.date | date: "%B %Y" }}</span>
 			</div>
 			<article class="content">
 				{{ content }}
 			</article>
 		</section>
+        <footer>
+           <p>
+           </br>
+           </br>
+           </p>
+        </footer>
 
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {

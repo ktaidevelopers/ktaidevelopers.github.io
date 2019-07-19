@@ -2,6 +2,7 @@
 title: Dialog Kit 작업하기
 category: 서비스 개발하기
 order: 4
+date: 2019-07-19
 ---
 
 > 기가지니 AI Kits 중 Dialog Kit에 대하여 알아봅시다.
@@ -176,4 +177,4 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 [참고] 대화모델 배포 전<img src = "https://user-images.githubusercontent.com/36177711/61191978-8aefaf80-a6eb-11e9-9174-e3d60fd34860.png">
 
-[참고] 대화모델 배포 후<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/서비스 시작과 종료 처리/)에서 다루도록 하겠습니다. 
+[참고] 대화모델 배포 후<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/인텐트어휘 정보 가져오기/)에서 다루도록 하겠습니다. 
