@@ -1,6 +1,6 @@
 ---
 title: Service SDK 작업하기
-category: 서비스 개발하기
+category: 2. 서비스 개발하기
 order: 3
 date: 2019-07-19
 ---

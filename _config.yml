@@ -15,14 +15,14 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Edition Template
+  name: 
   links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+    - 
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: "Asia/Seoul"
 
 permalink: pretty
 
