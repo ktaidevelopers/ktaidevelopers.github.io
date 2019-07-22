@@ -1,5 +1,5 @@
 ---
-title: Dialog Kit 작업하기
+title: 2.4 Dialog Kit 작업하기
 category: 2. 서비스 개발하기
 order: 4
 date: 2019-07-19
@@ -59,7 +59,7 @@ Dialog Kit은 Console > My Service 에서 진입할 수 있습니다.
 - NE-PIZZA								(발화 예: 지니야, 불고기 피자)
 - NE-PIZZA + PR-ORDER         (발화 예: 지니야, 불고기 피자 주문해줘)
 
-이렇게 적용된 인텐트는 그 목적에 따라 Service SDK 정보 입력에서 작성한 url을 기준으로 페이지을 띄우기도 하고, 페이지 이동 없이 코드 내에서 처리되기도 합니다. 이는 이후 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/인텐트어휘 정보 가져오기/)에서 자세히 다루도록 하겠습니다. 
+이렇게 적용된 인텐트는 그 목적에 따라 Service SDK 정보 입력에서 작성한 url을 기준으로 페이지을 띄우기도 하고, 페이지 이동 없이 코드 내에서 처리되기도 합니다. 이는 이후 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/2_서비스 개발하기/인텐트어휘 정보 가져오기/)에서 자세히 다루도록 하겠습니다. 
 
 #### 기본 어휘 사전
 
@@ -158,7 +158,7 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 <img src = "https://user-images.githubusercontent.com/36177711/61191779-23d0fb80-a6e9-11e9-9938-c9342237c7fb.png">
 
-[참고 : NE-CATEGORY 생성 결과]
+<div style="text-align:center">[참고 : NE-CATEGORY 생성 결과]</div>
 
 <img src = "https://user-images.githubusercontent.com/36177711/61191502-49103a80-a6e6-11e9-8411-8eddf6572540.png"/>
 
@@ -166,7 +166,7 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 인텐트 일괄 등록 방법도 어휘 사전 일괄 등록과 동일하게 엑셀 파일을 업로드 하여 등록합니다. 인텐트 목록 창에서 샘플 파일을 다운받아 양식에 맞게 작성한 후 업로드 합니다.
 
-[참고] 인텐트 일괄 등록 샘플 파일
+<div style='text-align:center'>[참고] 인텐트 일괄 등록 샘플 파일</div>
 <img src = "https://user-images.githubusercontent.com/36177711/61191827-db660d80-a6e9-11e9-8c2b-faf22d7b2801.png">
 
 ### 인텐트 생성 결과 확인
@@ -175,6 +175,9 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 인텐트 작업이 완료되면 인텐트 관리 하단에 대화모델 시뮬레이터로 이동합니다. 약 1분~5분 사이 일정 시간이 지나면 테스트를 해볼 수 있으며, '질의문구'란에 발화문를 입력하여 정상적으로 인텐트가 추출되는지 확인합니다
 
-[참고] 대화모델 배포 전<img src = "https://user-images.githubusercontent.com/36177711/61191978-8aefaf80-a6eb-11e9-9174-e3d60fd34860.png">
+<div style='text-align:center'>[참고] 대화모델 배포 전</div>
+<img src = "https://user-images.githubusercontent.com/36177711/61191978-8aefaf80-a6eb-11e9-9174-e3d60fd34860.png">
 
-[참고] 대화모델 배포 후<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/서비스 개발하기/인텐트어휘 정보 가져오기/)에서 다루도록 하겠습니다. 
+<div style="text-align:center">[참고] 대화모델 배포 후</div>
+
+<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [Service SDK-Dialog Kit 연동하기](https://ktaidevelopers.github.io/2_서비스 개발하기/인텐트어휘 정보 가져오기/)에서 다루도록 하겠습니다. 
