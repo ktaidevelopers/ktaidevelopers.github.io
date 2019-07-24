@@ -22,10 +22,10 @@ Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT�
 
 Service SDK API를 이용하기 위해서는 API 초기화가 반드시 진행되어야 합니다. 
 
-```
+```javascript
 //callback 방식
 var options={};
-options.apikey="asdnblkb1231lkj3nrlkjlkjsfsdf"; // API Link에서 발급받은 개발 key
+options.apikey="RTUwMDI5NzV8R0JPWERFVk18MTU2MDczODE2MjMzNA=="; // API Link에서 발급받은 개발 key
 options.keytype="GBOXDEVM"; // 개발 환경
 //options.keytype="GBOXCOMM"; // 상용 환경
 gigagenie.init(options,function(result_cd,result_msg,extra){
@@ -55,13 +55,15 @@ gigagenie.init(options,function(result_cd,result_msg,extra){
 
 API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비스 코드 내에 다음을 Embed 해야 합니다.
 
-`<script type="text/javascript" src="https://svcapi.gigagenie.ai/sdk/v1.0/js/gigagenie.js">`
+```html
+<script type="text/javascript" src="https://svcapi.gigagenie.ai/sdk/v1.0/js/gigagenie.js">
+```
 
 ### 링크, 소스 태그의 경로 설정
 
 3rd Party 웹 서버로 접근 시, 링크(href)와 소스(src) 태그의 경우 절대 경로를 사용해야 합니다. 3rd Party 서비스는 Base URL을 기준으로 연결됩니다. 아래 처럼 작성해야 정상적으로 접근이 됩니다.
 
-```
+```html
 <link href = "/css/style.css" rel="stylesheet">
 <script src = "/js/jquery-min.js"></script>
 ```

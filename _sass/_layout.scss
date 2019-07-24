@@ -184,7 +184,8 @@ $nav-image: $baseurl + "/images/menu.svg";
 .toc-entry.toc-h5,
 .toc-entry.toc-h6
 {
-  display: none;
+  font-weight: normal;
+  font-size: 13px;
 }
 
 .content {
