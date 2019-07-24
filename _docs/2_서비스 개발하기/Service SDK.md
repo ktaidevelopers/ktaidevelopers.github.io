@@ -8,6 +8,8 @@ date: 2019-07-19
 
 > 기가지니 AI Kits 중 Service SDK에 대하여 알아봅시다.
 
+### 소개
+
 Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT으로 3rd Party가 기가지니에 탑재된 음성, TTS, 녹음, 데이터 관리 기능 등을 사용할 수 있도록 Java Script API로 제공하고 있습니다.
 
 기본적인 기가지니의 서비스 실행 구조는 다음과 같습니다. 
@@ -18,7 +20,9 @@ Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT�
 
 <img src="https://user-images.githubusercontent.com/36177711/59748833-e0849800-92b6-11e9-8cd4-ac4463251ec3.png"/>
 
-### API 초기화
+### Service SDK API
+
+#### API 초기화
 
 Service SDK API를 이용하기 위해서는 API 초기화가 반드시 진행되어야 합니다. 
 
@@ -41,7 +45,7 @@ gigagenie.init(options,function(result_cd,result_msg,extra){
   - options.keytype = "GBOXCOMM" : 상용 환경에서 사용하는 type으로 검증 완료 후 상용 배포시에 적용합니다.
 - result_cd 값이 200으로 리턴되어야 API를 사용할 수 있습니다.
 
-### API 공통 사항
+#### API 공통 사항
 
 모든 Service SDK는 callback 방식으로 호출 결과를 전달합니다. 
 
@@ -59,7 +63,7 @@ API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비�
 <script type="text/javascript" src="https://svcapi.gigagenie.ai/sdk/v1.0/js/gigagenie.js">
 ```
 
-### 링크, 소스 태그의 경로 설정
+#### 링크, 소스 태그의 경로 설정
 
 3rd Party 웹 서버로 접근 시, 링크(href)와 소스(src) 태그의 경우 절대 경로를 사용해야 합니다. 3rd Party 서비스는 Base URL을 기준으로 연결됩니다. 아래 처럼 작성해야 정상적으로 접근이 됩니다.
 
@@ -68,17 +72,19 @@ API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비�
 <script src = "/js/jquery-min.js"></script>
 ```
 
-### API 전체보기
+#### API 전체보기
 
 기가지니 서비스를 개발 할 때 사용할 수 있는 API 종류를 한번에 볼 수 있습니다.
 
 - Service SDK API 전체보기 [(바로가기)](https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/API-전체-보기){: target="_blank"}
 
+<br>
+
 ### Service SDK 정보 등록
 
 Service SDK는 API 제공 외에 사용자 발화문에 알맞는 서비스를 실행시키는 역할도 합니다. 이는 「My Service - Service SDK 정보 등록/수정」 에서 작업할 수 있습니다. 서비스에 대한 Invoke명, Base URL, 각 인텐트의 Service URL 등을 입력합니다. 
 
-<img src="https://user-images.githubusercontent.com/36177711/59810297-824fc780-933f-11e9-8f6b-2db29af1445b.png"/>
+<center><img src="https://user-images.githubusercontent.com/36177711/59810297-824fc780-933f-11e9-8f6b-2db29af1445b.png"/></center>
 
 #### Invoke 등록
 
