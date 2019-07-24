@@ -2,6 +2,7 @@
 title: 2.4 Dialog Kit 작업하기
 category: 2. 서비스 개발하기
 order: 4
+toc: true
 date: 2019-07-19
 ---
 
@@ -15,9 +16,9 @@ Dialog Kit은 기가지니 대화 플랫폼이라 하여, 대화 모델 관리(D
 
 <center><img src = "https://user-images.githubusercontent.com/36177711/59890155-901e4f00-940a-11e9-9431-a26edaab3235.png"/></center>
 
-### Dialog Kit 구성 요소
+## Dialog Kit 구성 요소
 
-Dialog Kit을 사용할 때 알아야 하는 용어들에 대하여 간략히 소개하겠습니다. 자세한 내용은 Dialog Kit Guide에 작성되어 있으니 참고해주시면 됩니다. [(Dialog KIt Guide 바로가기)](https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-시작하기-전에)
+Dialog Kit을 사용할 때 알아야 하는 용어들에 대하여 간략히 소개하겠습니다. 자세한 내용은 Dialog Kit Guide에 작성되어 있으니 참고해주시면 됩니다. [(Dialog KIt Guide 바로가기)](https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-시작하기-전에){: target="_blank"}
 
 Dialog Kit은 기가지니 대화 서비스를 처리하는 메인 서버인 DSS(Dialog Service Server)와 대화를 해석해주는 DMS(Dialog Management Server), 그리고 3rd Party 서비스를 위한 CDSS(Custom Dialog Service Server)와 CDMS(Custom Dialog Management Server)로 구성됩니다. (여기서 대화 서버라는 것은 기가지니가 사용자의 발화문을 인식하고 이해하여 처리해주는 서버를 말합니다.) 
 

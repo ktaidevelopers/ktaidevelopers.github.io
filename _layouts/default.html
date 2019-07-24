@@ -28,7 +28,7 @@
 	<body>
 		<header>
 			<h1>
-				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo_w2.png" width="30" height="30" alt="{{ site.title }} logo"></a>
+				<a href="{{ site.baseurl }}/1_소개/서비스%20이해하기/"><img src="{{ site.baseurl }}/images/logo_w2.png" width="30" height="30" alt="{{ site.title }} logo"></a>
 				{{ site.title }}
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
@@ -43,7 +43,7 @@
 					<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
 						{% assign home = site.html_pages | where: 'url', '/' | first %}
                         <a href="https://apilink.kt.co.kr/" target="_blank">API Link 바로가기</a>
-						<a href="{{ site.baseurl }}/">{{ home.title }}</a>
+						
 					</li>
 				</ul>
 
@@ -70,14 +70,16 @@
 				<h3>{{ page.title }}</h3> 
                 <span class="date" style="color:gray"> Latest Update: {{ page.date | date: "%B %Y" }}</span>
 			</div>
+            <div>
 			<article class="content">
-				{{ content }}
+				{{ content | toc }}
 			</article>
 		</section>
         <footer>
            <p>
            </br>
            </br>
+
            </p>
         </footer>
 
@@ -85,6 +87,7 @@
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
 			});
+
 		</script>
 	</body>
 </html>

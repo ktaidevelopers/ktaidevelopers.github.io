@@ -1,91 +1,60 @@
 ---
-title: 서비스 개발 시작 전에 기가지니 알아보기
+title: 1.1 기가지니 서비스 이해하기
+category: 1. 소개
 date: 2019-07-19
 ---
 
-> 기가지니 서비스 개발에 앞서 기가지니 패밀리 단말(기가지니1, 2, LTE, Buddy)에 대해 알아봅니다.
+> 기가지니 서비스와 AI Kits에 대해 알아봅시다.
 
-기가지니는 KT의 인공지능(AI) 스피커 패밀리 라인입니다.   기가지니1을 시작으로 기가지니2, 기가지니 LTE 그리고 기가지니 Buddy 제품이 출시 되었습니다. 
+기가지니에서 제공하는 서비스는 발화 기반의 서비스입니다. 키보드, 마우스로 입력 받았던 서비스들을 발화로 입력하여 서비스를 진행한다고 생각하면 됩니다. 구구단 게임을 예로 들어볼까요?  기가지니에서 구구단 게임을 한다면, 기가지니가 문제를 음성으로 출력하면 사용자가 음성으로 정답을 말하는 형태가 됩니다.
 
-**기가지니1, 2**는 화면이 있는 셋톱박스 형식의 AI 스피커,  **기가지니 LTE**는 lte라우터 기능이 있는 휴대용 AI 스피커, 마지막으로 **기가지니 Buddy**는 기가지니 라인 중 가장 작은 크기로 휴대성이 좋은 소형 AI 스피커입니다.
+<center><img src ="https://user-images.githubusercontent.com/36177711/59646565-771b6100-91b2-11e9-9f40-35eabf65e3ce.png" style="margin-bottom:20px"></center>
 
-각 단말의 스펙은 아래 표를 참고해주세요.
+발화 서비스를 제공한다는 것은 고려해야 될 사항이 많습니다.  
 
-[기가지니 단말 스펙]  
+PC에서 지뢰찾기 게임을 실행한다고 하면, 사용자는 직접 마우스로 바로가기 아이콘을 찾아 실행시키거나 [찾기] 명령으로 직접 '지뢰찾기' 게임을 키보드로 입력해서 실행시킬 수도 있습니다.
 
-|  구분  |                          기가지니 1                          |                         기가지니 LTE                         |                          기가지니 2                          |                        기가지니 Buddy                        |
-| :----: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|        | <img src="https://user-images.githubusercontent.com/36177711/57264518-53da9d80-70ad-11e9-90b4-06f8d2a0a679.png" style="zoom:35%"/> | <img src="https://user-images.githubusercontent.com/36177711/57264521-54733400-70ad-11e9-9e51-e502f6179c29.jpg" style="zoom:20%"/> | <img src="https://user-images.githubusercontent.com/36177711/57264519-53da9d80-70ad-11e9-98a3-116b8a1f835f.jpg" style="zoom:26%"/> | <img src="https://user-images.githubusercontent.com/36177711/57264520-53da9d80-70ad-11e9-8349-a2fe3c9d0ee6.png" style="zoom:45%"/> |
-| 이동성 |                            고정형                            |                            휴대형                            |                            고정형                            |                            휴대형                            |
-| 출시일 |                           2017.01                            |                           2017.11                            |                           2018.02                            |                           2018.08                            |
-|  크기  |                      182 x 182 x 279 mm                      |                       70 x 70 x 170 mm                       |                     122.5 x 125 x 167 mm                     |                         85 x 65.5mm                          |
-|  무게  |                            1,800g                            |                             470g                             |                             950g                             |                             250g                             |
-| 스피커 |                             35W                              |                             10W                              |                             20W                              |                              6W                              |
-|  전원  |                         어댑터 연결                          |                         배터리 내장                          |                         어댑터 연결                          |                         배터리 내장                          |
-|  통신  |                       Bluetooth, wifi                        |                     Bluetooth, wifi, LTE                     |                          Bluetooth                           |                       Bluetooth, wifi                        |
+하지만 발화로 서비스를 실행한다고 하면, 굉장히 많은 가능성을 고려해야 합니다.
 
-### 기가지니1,2 ([**공식 사이트**](https://gigagenie.kt.com/main.do))
+- 지뢰찾기 게임 실행해줘
+- 지뢰찾기 게임 하고 싶어
+- 지뢰찾기 할래
+- 지뢰 찾는 게임 실행 시켜주라
+- 지뢰를 찾는 게임이 있는데 그게 갑자기 하고 싶네
+- ...
 
-대표 제품인 기가지니1, 2는 AI 스피커와 TV 셋톱박스를 결합한 제품입니다. 음성인식 위주의 AI 스피커에서 벗어나 시각과 청각을 어우르는 서비스를 제공할 수 있다는 특징이 있습니다.
+단순히 지뢰찾기 게임을 하고자 하는 것인데, 사용자에 따라서 정말 다양한 발화가 나올 수도 있습니다. 물론 모든 경우의 수를 찾아서 완벽하게 처리를 한다는 것은 무리입니다. 하지만 모든 사람들이 서비스를 사용하고 만족할 수 있도록 충분히 많은 발화문을 처리해야 합니다. 
 
-기가지니1은 카메라 부착이 가능한 초기모델로 현재 단종되었습니다. 기가지니2는 1보다 미니멀한 디자인에 다양한 컬러 스킨으로의 변경이 가능하다는 특징이 있습니다. 서비스 개발 및 상용화는 기가지니1,2 단말 구분 없이 모두 가능합니다.
+또한 기가지니 메인 단말인 기가지니 1,2는 셋톱박스로 TV와 연결되어 있기 때문에 단순히 음성 서비스가 아니라 화면도 함께 제공하는 서비스 임을 고려 해야 합니다. 화면 구성이 있다는 것은 큰 장점이 하나 있는데요. 앞서 말했던 다양한 발화처리에 대한 어려움을 화면 구성으로 조금은 해소 시킬 수 있습니다.
 
-<center><img src="https://user-images.githubusercontent.com/36177711/57265085-cc8f2900-70b0-11e9-8e12-53de81e850b7.png"/></center>
-<center><img src="https://user-images.githubusercontent.com/36177711/57266786-7920d900-70b8-11e9-8772-bb31b913bfc8.png" style="margin-bottom: 30px"></center>
+[기가지니 '집비서' 서비스]
 
+<center><img src="https://user-images.githubusercontent.com/36177711/59654574-d2108080-91d1-11e9-876f-f31e404b8331.png" style="margin-bottom:20px"/></center>
 
+위와 같이 기가지니 서비스들은 '발화 가이드'라고 하여 화면 하단 왼쪽에 서비스 실행에 대한 발화문을 제공하고 있습니다. 사용자가 어떤 발화로 서비스를 실행할지 막막할 때 아무 발화를 할 것이 아니라 해당 발화 가이드를 보고 서비스를 실행해 볼 수 있습니다. 
 
-기가지니 서비스에는 어떤 것들이 있을까요?  
+### 서비스 제공 형태
 
-현재 기가지니는 미디어, 키즈, 외국어, 금융, 엔터테인먼트, 쇼핑 등 다양한 서비스를 제공하고, 그중에서도 '소리동화', '핑크퐁 따라말하기'처럼 키즈 컨텐츠에 강한 면모를 보여주고 있습니다.  
+기가지니 서비스는 웹 앱 형태의 서비스로, 크롬에서 실행되는 웹 서비스라고 생각하면 됩니다. 단말 OS 및 내부 업데이트에 영향을 받지 않기 위해 웹 서비스 형태로 제공하고 있습니다. 
 
-각 카테고리별로 대표적인 서비스에 대해 정리해보았습니다. 집에 기가지니가 있다면 실행시켜 보세요. :) 
+기가지니 서비스를 런칭 하고자 한다면 개발에 앞서 웹 서버 구축이 우선적으로 되어 있어야 합니다. 
 
-|    서비스명     |                          설명                          |           실행 발화문            |
-| :-------------: | :----------------------------------------------------: | :------------------------------: |
-| 롯데슈퍼 장보기 |   주문 후 3시간 이내 도착! 음성으로 쉽고 빠른 장보기   |     지니야, 롯데슈퍼 보여줘      |
-|   금영노래방    |      말로 쉽게 찾고 내 입맛대로 즐기는 금영노래방      |   지니야, 금영노래방 실행해줘    |
-|  도전 절대음감  | 절대음감 게임! 피아노 건반 소리만 듣고 음을 맞춰보세요 |  지니야, 도전 절대음감 실행해줘  |
-|    운세친구     |      신통방통하게 나의 운세를 알려주는 운세친구!       |    지니야, 운세친구 시작해줘     |
-|    소리동화     |         실감나게 동화를 읽어 줄 땐, 소리동화!          |    지니야, 소리동화 실행해줘     |
-| 나는 타이니소어 |           나는 타이니소어로 공룡이 되어보자!           | 지니야, 나는 타이니소어 시작해줘 |
-|   야나두영어    |          누구나 쉽게 배울 수 있는 야나두 영어          |   지니야, 야나두 영어 실행해줘   |
-|   홈트레이닝    |   집에서 Noom과 함께 체계적으로 운동하는 홈트레이닝    |   지니야, 홈트레이닝 시작해줘    |
+#### AI Kits 
 
-<center><iframe width="700" height="500" src="https://www.youtube.com/embed/EboLX4nYUVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+AI Kits는 기가지니 서비스 개발을 위해 사용하는 도구들 입니다. 웹 앱 개발을 위한 Service SDK와 사용자 발화 처리를 위한 Dialog Kit, 이 두 가지 Kits로 기가지니 서비스 개발이 가능합니다.
 
-### 기가지니 LTE ([**공식 사이트**](https://gigagenie.kt.com/ltemain.do))
+- Service SDK : 기가지니의 음성인식, TTS, 녹음 등의 기능을 사용할 수 있도록 Java Script API로 제공하며, Dialog Kit에서 정의한 발화문의 기능 처리를 할 수 있습니다.
+- Dialog Kit : 기가지니 대화 플랫폼이라 하여 서비스의 발화문을 정의하는 툴 제공합니다.
+- Service SDK 정보 : Dialog Kit에서 정의한 발화문이 입력되었을 때 그에 맞는 3rd Party 서비스/기능을 실행할 수 있도록 웹 서버 주소 및 서비스 정보를 입력합니다.
 
-기가지니 LTE는 라우터 기능을 가진 휴대용 인공지능 스피커입니다.  
+<center><img src = "https://user-images.githubusercontent.com/36177711/59732278-8965cf80-9284-11e9-91c1-8cf528f98249.png" style="margin-bottom:20px"/></center>
 
-기가지니 1,2와 동일하게 하만카돈 스피커를 내장하였고, LTE 라우터 기능으로 최대 10개의 단말에 연결이 가능합니다. 기존에 무선인터넷 연결로만 사용가능 했던 AI 스피커와 달리 LTE 요금제를 결합하여 언제 어디서든 사용할 수 있는 것이 특징입니다. (물론 LTE 요금제 없이 와이파이 연결로도 사용이 가능합니다.) 올레 tv 셋탑박스와 연결하여 음성명령으로 티비를 제어할 수 있고, 모바일과 연결되어 핸드폰도 찾을 수 있습니다. 
+서비스 흐름은 다음과 같습니다. 기가지니에 음성 명령이 들어오면, 해당 음성 신호를 텍스트로 변환하여 대화 서버에 전달합니다. 대화 서버는 텍스트를 해석하여 해당 명령어가 개발자에 의해 기능이 정의되어 있는지 확인합니다.  기능이 정의되어 있다면, 그 기능에 맞는 동작을 처리합니다. 서비스 실행이면 서비스를 실행해주고, 단순 질의라면 질의에 맞는 답변을 출력합니다.  
 
-서비스로는 키즈 컨텐츠인 '키즈뮤직', '동화 오디오북', 야나두영어, 프로야구, 게임 등의 다양한 음성 전용 서비스를 제공합니다.
+AI Kits에서 공통적으로 사용하는 요소들을 살펴봅시다.
 
-<center><img src="https://user-images.githubusercontent.com/36177711/57285013-4a712580-70ed-11e9-949d-3873df8ff74c.jpeg"></center>
+- **Invoke** : 3rd Party 서비스의 호출명으로, 자신의 서비스임을 나타내는 명칭입니다. 
+- **Intent** : 기가지니에게 어떠한 의도를 전달할 것인지에 대한 표현어 또는 실행어라고 합니다. 
 
-<center><iframe width="700" height="500" src="https://www.youtube.com/embed/Oxism8VEBV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+자세한 내용은 각 Kits 설명을 통해 확인하실 수 있습니다.
 
-### 기가지니 Buddy ([**공식 사이트**](https://gigagenie.kt.com/buddy/main.do))
-
-기가지니 버디는 LTE 보다 작은 크기로 한손에 잡히는 AI 스피커 입니다. 집안 어디에서나 편리하게 사용할 수 있다는 특징을 가지고 있습니다. 작은 크기이지만 4개의 마이크와 하만카돈 스피커가 탑재되어 있으며, (또한 가장 저렴)  이동성이 있기 때문에 방 이곳 저곳에서의 홈 IoT 기기 제어에 편리합니다.
-
-<center><img src="https://user-images.githubusercontent.com/36177711/57283200-9621d000-70e9-11e9-8942-36fd9670461e.JPG"></center> 
-
-<center><iframe width="700" height="500" src="https://www.youtube.com/embed/H9u0RI6NQUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-### 기가지니 Table TV ([**공식 사이트**](https://gigagenie.kt.com/tatv/main.do))
-
-기가지니 라인업 중 가장 최근에 출시된 단말인 '기가지니 테이블TV'는 셋톱박스에 디스플레이를 결합시킨 개인용 AI TV 제품입니다. 11.6인치 디스플레이로, 유선랜 없이 와이파이 연결만으로 이용이 가능해 침실, 주방, 서재 등 집안 어디에서나 사용할 수 있다는 특징을 가지고 있습니다.
-
-4월 29일에 출시를 발표한 기가지니 테이블 TV는 현재 1차 판매 진행 중이며, 사용 방법과 서비스 제공에 대한 내용은 시사저널e 채널에서 업로드한 영상을 첨부하겠습니다.
-
-<center><img src="https://user-images.githubusercontent.com/36177711/57283809-f2392400-70ea-11e9-8172-41bf5a11e507.jpg"></center>
-
-<center><iframe width="700" height="500" src="https://www.youtube.com/embed/nRPBijcyKMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-### 참고 사이트
-
-- [KT 공식 홈페이지](https://www.kt.com)
-- [KT 유튜브 공식 계정](https://www.youtube.com/user/ollehallip)
-- [시사저널 e 채널 유튜브 공식 계정](https://www.youtube.com/channel/UCqvWpyWJ70Awn6H6lx7swsQ)

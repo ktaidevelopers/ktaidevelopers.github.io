@@ -24,12 +24,15 @@ social:
 
 timezone: "Asia/Seoul"
 
+toc: true
+
 permalink: pretty
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-toc
 
 exclude:
   - Gemfile

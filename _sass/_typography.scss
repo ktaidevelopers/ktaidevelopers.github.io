@@ -78,7 +78,8 @@ h6 {
 }
 
 a {
-	color: #4A4A4A;
+	color: $brand-colour;
+    text-decoration: none;
 	transition: color 0.2s ease;
 }
 

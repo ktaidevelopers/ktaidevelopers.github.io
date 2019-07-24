@@ -2,6 +2,7 @@
 title: 2.3 Service SDK 작업하기
 category: 2. 서비스 개발하기
 order: 3
+toc: true
 date: 2019-07-19
 ---
 
@@ -69,7 +70,7 @@ API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비�
 
 기가지니 서비스를 개발 할 때 사용할 수 있는 API 종류를 한번에 볼 수 있습니다.
 
-- Service SDK API 전체보기 [(바로가기)](https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/API-전체-보기)
+- Service SDK API 전체보기 [(바로가기)](https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/API-전체-보기){: target="_blank"}
 
 ### Service SDK 정보 등록
 
