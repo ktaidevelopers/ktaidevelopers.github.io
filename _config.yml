@@ -22,6 +22,8 @@ social:
 # -----
 # Build
 
+markdown: kramdown
+
 timezone: "Asia/Seoul"
 
 toc: true
