@@ -18,11 +18,15 @@ date: 2019-07-25
 <span style="color:red">필수 정책</span>  
 기가지니에서 3rd Party 서버로 제어 명령 전달 후 바로 서비스 종료 처리
 
-- 시나리오
-  - 기가지니에 IoT 단말 제어 관련 발화 실행
-  - IoT 단말 동작
-  - 동작 후 기가지니 서비스 강제 종료
-- 따라서, 기능 동작을 위해서는 <span style="color:blue">항상 invoke를 포함하여 발화를 해야 합니다. (invoke + 동작 제어 명령)</span>
-- 최초 연동 시에 QR 코드를 이용하는 경우, 해당 인텐트만 Full Window with Sound로 진행합니다.
+#### 시나리오
 
-#### [GiGA Genie + IoT 단말 제어 개발 가이드 다운로드](https://docs.google.com/uc?export=download&id=1hitFPcKVAmOheIpV0O1sqV48HVEj15W1)
+1. 기가지니에 IoT 단말 제어 관련 발화 실행
+2. IoT 단말 동작
+3. 동작 후 기가지니 서비스 강제 종료
+
+기능 동작을 위해서는 <span style="color:blue">항상 invoke를 포함하여 발화를 해야 합니다. (invoke + 동작 제어 명령)</span>  
+최초 연동 시에 QR 코드를 이용하는 경우, 해당 인텐트만 Full Window with Sound로 진행합니다.
+
+### 가이드 다운로드
+
+[GiGA Genie + IoT 단말 제어 개발 가이드 다운로드](https://docs.google.com/uc?export=download&id=1hitFPcKVAmOheIpV0O1sqV48HVEj15W1)
