@@ -184,4 +184,4 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 <div style="text-align:center">[참고] 대화모델 배포 후</div>
 
-<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [「인텐트/어휘 정보 가져오기」](https://ktaidevelopers.github.io/2_서비스 개발하기/인텐트어휘 정보 가져오기/){: target="_blank"}에서 다루도록 하겠습니다. 
+<img src = "https://user-images.githubusercontent.com/36177711/61192001-ba9eb780-a6eb-11e9-9e65-467326aa83d4.png">CDMS Response에서는 인텐트 결과 "Goal:인텐트명"와 함께 개발자가 코드 내에서 처리할 수 있도록 어휘 사전 정보를 Service SDK API - onActionEvent로 전달해줍니다. 이 내용은 [「2.5 인텐트/어휘 정보 가져오기」](https://ktaidevelopers.github.io/2_서비스 개발하기/인텐트어휘 정보 가져오기/){: target="_blank"}에서 다루도록 하겠습니다. 
