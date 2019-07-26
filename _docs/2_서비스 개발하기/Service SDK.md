@@ -13,7 +13,7 @@ Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT�
 
 기본적인 기가지니의 서비스 실행 구조는 다음과 같습니다. 
 
-기가지니는 컨테이너 앱을 통해 Service SDK API를 이용하여 개발한 웹 앱 서비스를  실행시킵니다. 여기서 컨테이너 앱은 쉽게 크롬이라고 생각해주시면 됩니다.  
+기가지니는 컨테이너 앱을 통해, 등록되어 있는 Service SDK 정보로 웹 앱 서비스를 실행시킵니다. 여기서 컨테이너 앱은 쉽게 크롬이라고 생각해주시면 됩니다.  
 
 
 
@@ -62,6 +62,8 @@ API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비�
 <script type="text/javascript" src="https://svcapi.gigagenie.ai/sdk/v1.0/js/gigagenie.js">
 ```
 
+<br>
+
 ### 링크, 소스 태그의 경로 설정
 
 3rd Party 웹 서버로 접근 시, 링크(href)와 소스(src) 태그의 경우 절대 경로를 사용해야 합니다. 3rd Party 서비스는 Base URL을 기준으로 연결됩니다. 아래 처럼 작성해야 정상적으로 접근이 됩니다.
@@ -71,17 +73,17 @@ API는 JavaScript Object로 제공되며, 객체를 가져오기 위해 서비�
 <script src = "/js/jquery-min.js"></script>
 ```
 
+<br>
+
 ### API 전체보기
 
 기가지니 서비스를 개발 할 때 사용할 수 있는 API 종류를 한번에 볼 수 있습니다.
 
 - Service SDK API 전체보기 [(바로가기)](https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/API-전체-보기){: target="_blank"}
 
-<br>
-
 ## 2.3.3 Service SDK 정보 등록
 
-Service SDK는 API 제공 외에 사용자 발화문에 알맞는 서비스를 실행시키는 역할도 합니다. 이는 「My Service - Service SDK 정보 등록/수정」 에서 작업할 수 있습니다. 서비스에 대한 Invoke명, Base URL, 각 인텐트의 Service URL 등을 입력합니다. 
+Service SDK는 API 제공 외에 사용자 발화문에 알맞는 서비스를 실행시키는 역할도 합니다. 이는 「My Service - Service SDK 정보 등록/수정」 에서 작업할 수 있습니다. 서비스에 대한 Invoke명, Base URL, 각 인텐트의 Service URL 등을 입력 할 수 있습니다. 
 
 <center><img src="https://user-images.githubusercontent.com/36177711/59810297-824fc780-933f-11e9-8f6b-2db29af1445b.png"/></center>
 
@@ -110,7 +112,7 @@ Dialog Kit 작업 전에 가장 중요한 Invoke부터 설정합니다. Invoke�
 
 ### 2) URL 구성 방법
 
-3rd Party 서비스는 Base URL + Service URL을 조합한 주소를 로딩합니다. 해당 url 정보는 API Link Service sdk 정보 등록에서 설정할 수 있습니다. Dialog Kit으로 정의 내린 발화문들에 대하여 의도에 맞는 페이지를 로딩하도록 합니다.
+3rd Party 서비스는 Base URL + Service URL을 조합한 주소를 로딩합니다. 해당 url 정보는 「Console - Service sdk 정보 등록」에서 설정할 수 있습니다. 설정된 URL들은 Dialog Kit으로 정의 내린 발화문들에 대하여 의도에 맞는 페이지를 로딩하도록 합니다.
 
 #### Base URL 설정
 
@@ -122,7 +124,7 @@ service url은 각 인텐트 실행 시에 로드 되는 페이지 주소입니�
 
 <img src = "https://user-images.githubusercontent.com/36177711/61266495-fbbbc800-a7ce-11e9-83e3-8e1e88a97570.png">
 
-인텐트는 필수로 1개 등록되어야 service sdk 정보 등록이 되므로, 서비스 실행에 대한 인텐트를 등록하겠습니다. 인텐트 실행에 대한 내용은 [「2.4 Dialog Kit 작업하기」](https://ktaidevelopers.github.io/2_서비스 개발하기/Dialog Kit/){: target="_blank"}과 [「2.6 서비스 시작과 종료 처리」](https://ktaidevelopers.github.io/2_서비스 개발하기/서비스 시작과 종료 처리/){: target="_blank"} 내용을 확인해주세요.
+인텐트는 필수로 1개가 이상 등록 되어야 하므로, 서비스 실행에 대한 인텐트를 먼저 등록하겠습니다. 인텐트 실행에 대한 내용은 [「2.4 Dialog Kit 작업하기」](https://ktaidevelopers.github.io/2_서비스 개발하기/Dialog Kit/){: target="_blank"}과 [「2.6 서비스 시작과 종료 처리」](https://ktaidevelopers.github.io/2_서비스 개발하기/서비스 시작과 종료 처리/){: target="_blank"} 내용을 확인해주세요.
 
 <img src = "https://user-images.githubusercontent.com/36177711/61259274-70353d80-a7b4-11e9-8fb3-1535b1811baa.png">
 
@@ -142,16 +144,15 @@ service url은 각 인텐트 실행 시에 로드 되는 페이지 주소입니�
 
 #### Background Screen
 
-기가지니 화면 없이 백그라운드로 실행되는 서비스인 경우에 해당됩니다. 대표적으로는 블루캔버스, 스마트렌탈 등의 서비스가 있으며 IoT 제어 관련 서비스일 경우 많이 사용됩니다.   
-Background 서비스를 진행할 경우, 사용자가 서비스가 실행 중인지 모르기 때문에 서비스 시나리오 구성 시 더 많은 신경을 써야 합니다. 예를 들어 IoT 서비스로 어느 단말을 제어한다고 가정한다면, 기가지니가 해당 단말에 대한 제어가 끝나면 "(단말 이름) ㅇㅇ을 실행합니다."의 TTS와 함께 해당 서비스가 종료되도록 시나리오를 구성해야 합니다.  
+화면 없이 백그라운드로 실행되는 서비스인 경우에 해당됩니다. 대표적으로는 '블루캔버스' 서비스가 있습니다.  Background 서비스를 진행할 경우, 사용자가 서비스가 실행 중인지 모르기 때문에 서비스 시나리오 구성 시 더 많은 신경을 써야 합니다. 예를 들어 IoT 서비스로 어느 단말을 제어한다고 가정한다면, 기가지니가 해당 단말에 대한 제어가 끝나면 "(단말 이름) ㅇㅇ을 실행합니다."의 TTS와 함께 해당 서비스가 종료되도록 시나리오를 구성해야 합니다.  
 
 ### 4) Main Page 선택
 
 마지막으로 main page는 해당 서비스에서 가장 메인으로 실행되는 인텐트(service url)를 선택하면 됩니다. 기가지니는 발화로 어느 서비스나 접근할 수 있어서 메인 페이지 개념이 따로 없지만, 해당 기능은 앱 갤러리에서 필요한 요소입니다.   
-기가지니 홈 화면에서 앱 갤러리를 진입하면, 사용자는 리모컨으로 원하는 서비스를 실행시키게 됩니다. 메인 페이지가 없다면 가장 핵심이 되는 페이지를 로드하도록 선택하면 됩니다. 
+기가지니 홈 화면에서 앱 갤러리를 진입하면, 사용자는 리모컨으로 원하는 서비스를 실행시키게 됩니다. 메인 페이지가 없다면 가장 핵심이 되는 페이지를 로드하도록 선택하면 됩니다.
 
 ## 2.3.4 Service SDK 적용 테스트 해보기
 
-기가지니 개발자모드에서는 발화 실행 외에 url 입력으로도 서비스를 직접 실행해볼 수 있습니다. 해당 서비스에 대한 dialog kit 발화문 구성이 완료되지 않은 경우, 서비스 주소를 직접 입력하여 정상적으로 실행되는지 (기가지니 init이 정상적으로 되는지, 화면 UI는 문제 없는지 등) 확인해봅니다. 
+기가지니 개발자모드에서는 발화 실행 외에 url 입력으로도 서비스를 직접 실행해볼 수 있습니다. 해당 서비스에 대한 dialog kit 발화문 구성이 완료되지 않은 경우, 서비스 주소를 직접 입력하여 정상적으로 실행되는지 (기가지니 init이 정상적으로 되는지, 화면 UI는 문제 없는지 등) 확인해 볼 수 있습니다.
 
 <img src="https://user-images.githubusercontent.com/36177711/59584115-2e16ce80-9118-11e9-9b0c-d3ff44b3db8d.png"/>

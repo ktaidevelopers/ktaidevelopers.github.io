@@ -15,7 +15,7 @@ date: 2019-07-25
 
 기가지니 웹 앱 서비스에서 화면 UI 없이 제어 명령만 전달
 
-<span style="color:red">필수 정책</span>  
+**<span style="color:red">필수 정책</span>**  
 기가지니에서 3rd Party 서버로 제어 명령 전달 후 바로 서비스 종료 처리
 
 ### 시나리오
