@@ -72,8 +72,10 @@
                 <span class="date" style="color:gray"> Latest Update: {{ page.date | date: "%B %Y" }}</span>
 			</div>
             <div>
-			<article class="content">
+            <div class = "nav">
                 {% include toc.html html=content h_max=5 sanitize=true %}
+            </div>
+			<article class="content">
 				{{ content }}
 			</article>
 		</section>
