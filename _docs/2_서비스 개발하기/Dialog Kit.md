@@ -2,6 +2,7 @@
 title: 2.4 Dialog Kit 작업하기
 category: 2. 서비스 개발하기
 order: 4
+toc: true
 date: 2019-07-19
 ---
 
