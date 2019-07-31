@@ -16,6 +16,8 @@
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/logo_c.png">
         <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
 
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
+
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
 				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -27,6 +29,13 @@
 	</head>
 
 	<body>
+
+        <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: '#3583d6',
+            textColor: '#fff'
+        })</script>
+
 		<header>
 			<h1>
 				<a href="{{ site.baseurl }}/1_소개/서비스%20이해하기/"><img src="{{ site.baseurl }}/images/logo_w2.png" width="30" height="30" alt="{{ site.title }} logo"></a>
