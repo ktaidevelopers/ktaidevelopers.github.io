@@ -9,7 +9,8 @@ date: 2019-07-25
 
 ## 4.3.1 목적
 
-해당 시나리오는 **IoT Makers 및 홈 IoT API와 별개**로, 기가지니 웹 앱 서비스를 기반으로 3rd Party의 IoT 단말을 제어하는 개발 시나리오 입니다.
+**※ 기가지니 - IoT 제어의 경우 반드시 IoT Makers를 통해 개발해야 합니다.**  [링크 바로가기](<https://apilink.kt.co.kr/api/menu/apiSvcDetail.do?sysId=IOTMAKERS>){: target="_blank"}  
+해당 시나리오는 <u>부득이하게</u> IoT Makers를 사용하지 못하는 경우, 기가지니 웹 앱 서비스를 기반으로 IoT 단말을 제어할 때 사용합니다.
 
 ## 4.3.2 동작 방식
 

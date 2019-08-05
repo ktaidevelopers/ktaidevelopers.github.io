@@ -2,20 +2,18 @@
 title: 2.3 Service SDK 작업하기
 category: 2. 서비스 개발하기
 order: 3
-date: 2019-07-19
+date: 2019-08-05
 ---
 
 > 기가지니 AI Kits 중 Service SDK에 대하여 알아봅시다.
 
 ## 2.3.1 소개
 
-Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT으로 3rd Party가 기가지니에 탑재된 음성, TTS, 녹음, 데이터 관리 기능 등을 사용할 수 있도록 Java Script API로 제공하고 있습니다.
+Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT으로 3rd Party가 기가지니에 탑재된 음성, TTS, 녹음, 데이터 관리 기능 등을 사용할 수 있도록 Java Script API로 제공하고 있습니다. 개발자는 서비스에 필요한 기가지니 SDK API를 찾아 코드에 적용합니다. 
 
 기본적인 기가지니의 서비스 실행 구조는 다음과 같습니다. 
 
-기가지니는 컨테이너 앱을 통해, 등록되어 있는 Service SDK 정보로 웹 앱 서비스를 실행시킵니다. 여기서 컨테이너 앱은 쉽게 크롬이라고 생각해주시면 됩니다.  
-
-
+기가지니는 컨테이너 앱을 통해, 등록되어 있는 Service SDK 정보로 웹 앱 서비스를 실행시킵니다. 여기서 컨테이너 앱은 쉽게 크롬이라고 생각해주시면 됩니다. 
 
 <img src="https://user-images.githubusercontent.com/36177711/59748833-e0849800-92b6-11e9-8cd4-ac4463251ec3.png"/>
 
@@ -23,7 +21,8 @@ Service SDK는 기가지니 서비스를 개발하기 위한 필수 개발 KIT�
 
 ### API 초기화
 
-Service SDK API를 이용하기 위해서는 API 초기화가 반드시 진행되어야 합니다. 
+Service SDK API를 이용하기 위해서는 API 초기화가 반드시 진행되어야 합니다.  
+init이 성공하지 않은 경우, 다른 API가 호출되지 않습니다. 
 
 ```javascript
 //callback 방식
@@ -40,9 +39,15 @@ gigagenie.init(options,function(result_cd,result_msg,extra){
 
 - options.apikey : API Link에서 발급받은 개발 key를 설정합니다.
 - options.keytype : 서비스 실행 환경에 맞는 keytype을 지정합니다. 
-  - options.keytype = "GBOXDEVM" : 개발 환경에서 사용하는 type으로, 개발자 모드 실행 시 사용합니다.
+  - options.keytype = "GBOXDEVM" : 개발 환경에서 사용하는 type으로 개발자 모드에서 사용합니다.
   - options.keytype = "GBOXCOMM" : 상용 환경에서 사용하는 type으로 검증 완료 후 상용 배포시에 적용합니다.
 - result_cd 값이 200으로 리턴되어야 API를 사용할 수 있습니다.
+
+#### 개발 Key 확인하기
+
+개발 Key 값은 Console - My Service 하단에 [개발 Key 보기] 버튼을 누르면 확인할 수 있습니다.
+
+<img src = "https://user-images.githubusercontent.com/36177711/62448206-38f9f100-b7a2-11e9-9973-dac36fcd36af.png"/>
 
 ### API 공통 사항
 
