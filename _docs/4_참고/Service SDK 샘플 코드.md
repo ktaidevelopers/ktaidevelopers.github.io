@@ -1,7 +1,7 @@
 ---
 title: 4.4 Service SDK 샘플 코드
 category: 4. 참고
-order: 4
+order: 3
 date: 2019-08-05
 ---
 
