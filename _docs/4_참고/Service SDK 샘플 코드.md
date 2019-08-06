@@ -20,28 +20,29 @@ date: 2019-08-05
 ##### [구구단  게임](https://github.com/GiGAGenie-ServiceSDK/gigagenie-ninenine){: target="_blank"}
 
 - 사용 API
-  - gigagenie.init (초기화)
-  - gigagenie.voice.getVoiceText (음성 인식)
-  - gigagenie.voice.stopTTS (음성 인식 중단)
-  - gigagenie.media.onMuteRequest (Mute 요청 이벤트 수신)
-  - gigagenie.voice.onRequestClose (서비스 종료 수신)
-  - gigagenie.voice.svcFinished (서비스 종료 처리)
+  - [gigagenie.init (초기화)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/init>){: target="_blank"}
+  - [gigagenie.voice.getVoiceText (음성 인식)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.getVoiceText>){: target="_blank"}
+  - [gigagenie.voice.stopTTS (음성 인식 중단)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.stopTTS>){: target="_blank"}
+  - [gigagenie.media.onMuteRequest (Mute 요청 이벤트 수신)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/media.onMuteRequest>){: target="_blank"}
+  - [gigagenie.voice.onRequestClose (서비스 종료 수신)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.onRequestClose>){: target="_blank"}
+  - [gigagenie.voice.svcFinished (서비스 종료 처리)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.svcFinished>){: target="_blank"}
 
 ##### [단어 퀴즈](https://github.com/GiGAGenie-ServiceSDK/gigagenie-quiz){: target="_blank"}
 
 - 8초 간격으로 힌트를 보여주고 퀴즈 정답을 맞추는 게임
 - 사용 API
-  - gigagenie.init (초기화)
-  - gigagenie.voice.getVoiceText (음성 인식)
-  - gigagenie.voice.sendTTS (음성 출력)
-  - gigagenie.voice.setVoiceFilter  (음성 필터 적용 단어 등록)
-  - gigagenie.voice.onVoiceFilterMsg (음성 필터 적용 메세지 수신)
-  - gigagenie.voice.onRequestClose (서비스 종료 수신)
+  - [gigagenie.init (초기화)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/init>){: target="_blank"}
+  - [gigagenie.voice.getVoiceText (음성 인식)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.getVoiceText>){: target="_blank"}
+  - [gigagenie.voice.sendTTS (음성 출력)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.sendTTS>){: target="_blank"}
+  - [gigagenie.voice.setVoiceFilter  (음성 필터 적용 단어 등록)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.setVoiceFilter>){: target="_blank"}
+  - [gigagenie.voice.onVoiceFilterMsg (음성 필터 적용 메세지 수신)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.onVoiceFilterMsg>){: target="_blank"}
+  - [gigagenie.voice.onRequestClose (서비스 종료 수신)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.onRequestClose>){: target="_blank"}
+  - [gigagenie.voice.svcFinished (서비스 종료 처리)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/voice.svcFinished>){: target="_blank"}
 
 ##### [Youtube 재생](<https://github.com/GiGAGenie-ServiceSDK/gigagenie-youtube>){: target="_blank"}
 
 - Youtube 영상 플레이로 onAppStatusChange API 동작 확인
 - 사용 API
-  - gigagenie.init (초기화)
-  - gigagenie.init.onAppStatusChange (Mute/Unmute, Pause/Resume 상태 확인)
-  - gigagenie.media.onMuteRequest (Mute 요청 이벤트 수신)
+  - [gigagenie.init (초기화)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/init>){: target="_blank"}
+  - [gigagenie.init.onAppStatusChange (Mute/Unmute, Pause/Resume 상태 확인)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/init.onAppStatusChange>){: target="_blank"}
+  - [gigagenie.media.onMuteRequest (Mute 요청 이벤트 수신)](<https://github.com/GiGAGenie-ServiceSDK/UserGuide/wiki/media.onMuteRequest>){: target="_blank"}
