@@ -1,13 +1,13 @@
 ---
-title: 4.4 Service SDK 샘플 코드
+title: 4.2 Service SDK 샘플 코드
 category: 4. 참고
-order: 3
+order: 2
 date: 2019-08-05
 ---
 
 > Service SDK에서 제공하는 기가지니 샘플 코드를 다운로드 받고, 직접 실행해봅니다.
 
-### 4.4.1 서비스 샘플 코드
+### 4.2.1 서비스 샘플 코드
 
 #### **실행 방법**
 
