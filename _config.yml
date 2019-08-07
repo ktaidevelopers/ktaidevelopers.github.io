@@ -44,6 +44,9 @@ collections:
     title: Documentation
     permalink: /:path/
     output: true
+  etc:
+    permalink: /:path/
+    output: true
 
 defaults:
   -
@@ -72,6 +75,12 @@ defaults:
     values:
       _comments:
         type: Marks the impact of this release
+  -
+    scope:
+      path: ""
+      type: "etc"
+    values:
+      layout: default
 
 # -----------
 # CloudCannon

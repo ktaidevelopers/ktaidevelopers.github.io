@@ -284,7 +284,7 @@ nav > ul {
 	> a {
 		color: #666;
 		text-decoration: none;
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		padding: $space / 2 0 $space / 2 $space * 2;
 		display: block;
 	}
@@ -297,6 +297,11 @@ nav > ul {
 
 	&.top-level > a {
 		line-height: 1.5;
+		font-weight: 600;
+		padding-left: $space;
+	}
+	&.top-level-etc > a {
+		line-height: 1;
 		font-weight: 600;
 		padding-left: $space;
 	}
