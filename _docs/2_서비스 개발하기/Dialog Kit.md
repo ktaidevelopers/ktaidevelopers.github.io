@@ -2,7 +2,7 @@
 title: 2.4 Dialog Kit 작업하기
 category: 2. 서비스 개발하기
 order: 4
-date: 2019-07-19
+date: 2019-08-13
 ---
 
 > 기가지니 AI Kits 중 Dialog Kit에 대하여 알아봅시다.
