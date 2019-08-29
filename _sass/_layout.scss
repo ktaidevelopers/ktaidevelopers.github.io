@@ -305,6 +305,11 @@ nav > ul {
 		font-weight: 600;
 		padding-left: $space;
 	}
+	&.top-level-site > a {
+		line-height: 0.8;
+		font-weight: 400;
+		padding-left: $space;
+	}
 }
 
 .settings-panel-example {
