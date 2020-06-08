@@ -38,7 +38,7 @@
 
 		<header>
 			<h1>
-				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo_w2.png" width="30" height="30" alt="{{ site.title }} logo"></a>
+				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo_w2.png" width="25" height="25" alt="{{ site.title }} logo"></a>
 				<span style = "font-size:0.9em">{{ site.title }}</span>
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
@@ -56,7 +56,20 @@
                         <a href="https://github.com/gigagenieDmt/DialogKit-deploymentGuide/wiki/1.-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A0%84%EC%97%90" target="_blank">Dialog Kit Guide 바로가기</a>
 					</li>
 				</ul>
-
+                <ul>
+					{% assign grouped = site.template | group_by: 'category' %}
+					{% for group in grouped %}					
+                        <li class="nav-item top-level-template {% if group.name == page.category %}current{% endif %}">
+                               {% assign items = group.items | sort: 'order' %}						    
+                                <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+							    <ul>
+								    {% for item in items %}
+								    	<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+							    	{% endfor %}
+						    	</ul>
+						</li>  
+					{% endfor %}
+				</ul>
 				<ul>
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for group in grouped %}					

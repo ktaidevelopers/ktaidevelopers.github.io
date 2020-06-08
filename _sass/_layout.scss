@@ -176,6 +176,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 		margin: 40px 0;
 	}
 
+
     h1 {       
         font-size:35px;
         margin: 30px 0;
@@ -190,11 +191,14 @@ $nav-image: $baseurl + "/images/menu.svg";
     h2 {       
         font-size:32px;
         margin: 30px 0;
+        color: #003A51;
     }
+
 
     h3 {       
         font-size: 28px;
-        margin: 30px 0;    
+        margin: 25px 0;
+        color: #1993A8;    
     }
 
     h4 {
@@ -304,6 +308,13 @@ nav > ul {
 		line-height: 1;
 		font-weight: 600;
 		padding-left: $space;
+	}
+	&.top-level-template > a {
+		line-height: 1;
+        color: #003A51;
+		font-weight: 600;
+		padding-left: $space;
+        
 	}
 	&.top-level-site > a {
 		line-height: 0.8;
@@ -463,6 +474,7 @@ blockquote {
 	border-left: 5px solid #FD0;
 	padding: 10px 15px;
 	margin-left: -15px;
+    margin-top: 60px;
 	margin-right: -10px;
 	background-color: $brand-colour-light;
 	border-color: $brand-colour;

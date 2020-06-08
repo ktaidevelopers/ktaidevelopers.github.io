@@ -47,6 +47,9 @@ collections:
   etc:
     permalink: /:path/
     output: true
+  template:
+    permalink: /:path/
+    output: true
 
 defaults:
   -

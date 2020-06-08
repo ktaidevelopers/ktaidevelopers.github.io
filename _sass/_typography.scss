@@ -5,6 +5,7 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 
+
 body {
 	height: 100%;
 	max-height: 100%;
@@ -46,7 +47,7 @@ h5,
 h6 {
 	color: #2E2E2E;
 	line-height: 1.15em;
-	margin: 0 0 0.4em 0;
+	margin: 0 0 0.5em 0;
 	font-weight: 600;
 }
 
@@ -98,7 +99,7 @@ figure {
 
 ol,
 ul {
-	padding-left: 3rem;
+    padding-left: 2em;
 }
 
 ol ol,
@@ -106,7 +107,11 @@ ul ul,
 ul ol,
 ol ul {
 	margin: 0 0 0.4em 0;
-	padding-left: 2em;
+	padding-left: 1.3em;
+}
+
+ul, ul, ul {
+    margin: 0 1 0.4em 0;
 }
 
 dl dt {
