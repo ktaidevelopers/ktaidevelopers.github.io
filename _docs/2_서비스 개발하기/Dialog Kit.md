@@ -171,12 +171,29 @@ Dialog Kit에서는 일반적으로 많이 사용되는 NE, PR 사전을 기본 
 
 <img src = "https://user-images.githubusercontent.com/36177711/61191779-23d0fb80-a6e9-11e9-9938-c9342237c7fb.png">
 
+
+
+**STATUS 입력이란?**
+
+인텐트 규칙에는 Status를 조건으로 넣을 수 있습니다. Status는 해당 대화구문 혹은 인텐트가 특정한 환경(예: OTV 재생중)으로, 인텐트 규칙 마다 Status 조건을 줄 수 있습니다.
+
+※ 특정 Status 환경이 필요한 경우에만 선택합니다. 미선택 시 모든 환경에서 실행 가능
+
+<img src ="https://user-images.githubusercontent.com/36177711/95415259-bd2da280-096a-11eb-94f9-d519705b2f98.png"/>
+
+- Status 추가 시, 인텐트 규칙 후보
+  - NE + Status
+  - PR + Status
+  - NE + PR + Status
+
 #### 인텐트 일괄 등록
 
 인텐트 일괄 등록 방법도 어휘 사전 일괄 등록과 동일하게 엑셀 파일을 업로드 하여 등록합니다. 인텐트 목록 창에서 샘플 파일을 다운받아 양식에 맞게 작성한 후 업로드 합니다.
 
+자세한 작성 방법은 샘플 파일 내 '작성방법' 시트를 참고합니다.
+
 <div style='text-align:center'>[참고] 인텐트 일괄 등록 샘플 파일</div>
-<img src = "https://user-images.githubusercontent.com/36177711/61191827-db660d80-a6e9-11e9-8c2b-faf22d7b2801.png">
+<img src = "https://user-images.githubusercontent.com/36177711/95414729-78553c00-0969-11eb-835d-e91c891ce40b.png">
 
 ### 4) 인텐트 생성 결과 확인
 
